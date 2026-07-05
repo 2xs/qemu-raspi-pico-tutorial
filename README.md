@@ -69,6 +69,14 @@ between QEMU runs.
 
 See [05-reboot-counter-flash](05-reboot-counter-flash/README.md).
 
+### Step 6: Read the Flash Unique Board ID
+
+Compile a small SDK-based example derived from `system/unique_board_id`, then
+run it with QEMU's default flash unique ID and with an explicit `flash-uid=...`
+machine option.
+
+See [06-board-unique-id](06-board-unique-id/README.md).
+
 ## Repository Layout
 
 Each tutorial step lives in its own directory:
@@ -79,6 +87,7 @@ Each tutorial step lives in its own directory:
 03-hello-world-uart0/
 04-hello-world-core1/
 05-reboot-counter-flash/
+06-board-unique-id/
 ```
 
 Every step has a `README.md` explaining:
