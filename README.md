@@ -77,6 +77,14 @@ machine option.
 
 See [06-board-unique-id](06-board-unique-id/README.md).
 
+### Step 7: Control the Emulated Random Source
+
+Compile a small SDK-based random-number example, then run it once with QEMU's
+default ROSC random source and once with a fixed `rosc-random-seed=...` value
+to obtain a reproducible sequence.
+
+See [07-random-seed](07-random-seed/README.md).
+
 ## Repository Layout
 
 Each tutorial step lives in its own directory:
@@ -88,6 +96,7 @@ Each tutorial step lives in its own directory:
 04-hello-world-core1/
 05-reboot-counter-flash/
 06-board-unique-id/
+07-random-seed/
 ```
 
 Every step has a `README.md` explaining:
