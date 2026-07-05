@@ -1,0 +1,13 @@
+build/
+cmake-build-*/
+
+*.bin
+*.elf
+*.uf2
+*.map
+*.dis
+
+flash.bin
+counter-flash.bin
+
+.DS_Store
